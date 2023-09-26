@@ -3,9 +3,9 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>Archives | Hexo</title>
-        <meta name="author" content="John Doe" />
-        <meta name="description" content="" />
+        <title>Archives | It&#39;s LaGz3</title>
+        <meta name="author" content="LaGz3" />
+        <meta name="description" content="东隅已逝，桑榆非晚" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link rel="icon" href="/images/avatar.jpg" />
@@ -35,6 +35,16 @@
 
 <link rel="stylesheet" href="/css/main.css" />
 
+        <canvas id="fireworks" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"></canvas>
+    <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+    <script src="/js/fireworks.min.js"></script>
+    <canvas id="background" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"></canvas>
+    <script src="/js/background.min.js"></script>
+    <div id="cursor"></div>
+    <link rel="stylesheet" href="/css/cursor.min.css">
+    <script src="/js/cursor.min.js"></script>
+
+
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
@@ -50,7 +60,7 @@
             <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HEXO</span>
+            <span>IT&#39;S LAGZ3</span>
         </a>
         
         <a href="/">
@@ -82,7 +92,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+            <span>&emsp;IT&#39;S LAGZ3</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -160,6 +170,20 @@
             </div>
         </div>
         
+        <div class="timeline" data-title="搭建blog时遇到的问题">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2023/9/23</div>
+                <a href="/2023/09/23/%E6%90%AD%E5%BB%BAblog%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+                    <h3>搭建blog时遇到的问题</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
 
@@ -167,11 +191,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 Hexo
+            2022 - 2023 It&#39;s LaGz3
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;John Doe
+            &commat;LaGz3
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
